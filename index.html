@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
 </head>
 <body>
     
@@ -16,8 +17,32 @@
         <h1 class="title">Todo List App</h1>
         <form class="form">
            <input type="text" placeholder="Add a new Task" class="form__input" id="task-input" />
-           <button class="form__button" type="submit">Add</button> 
+           <button class="form__button" type="submit">Add Task</button> 
         </form>
+    </div>
+    <!-- Container To Display Task-->
+    <div class="task__container">
+       <ul class="task__list" id="task__list">
+           <!-- Tasks will be added here dynamically -->
+            <div class="task__item-container">
+                <li class="task__item">Comprar Leche</li>
+                <button class="delete-button" id="delete-button">
+                    <img 
+                        src="./delete.svg"
+                        alt="delete icon"
+                    >
+                </button>
+            </div>
+            <div class="task__item-container">
+                <li class="task__item">Comprar Leche</li>
+                <button class="delete-button" id="delete-button">
+                    <img 
+                        src="./delete.svg"
+                        alt="delete icon"
+                    >
+                </button>
+            </div>
+       </ul>
     </div>
     
 
