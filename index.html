@@ -17,34 +17,17 @@
         <h1 class="title">Todo List App</h1>
         <form class="form">
            <input type="text" placeholder="Add a new Task" class="form__input" id="task-input" />
-           <button class="form__button" type="submit">Add Task</button> 
+           <button class="form__button" id="add__button" type="submit">Add Task</button> 
         </form>
     </div>
     <!-- Container To Display Task-->
     <div class="task__container">
-       <ul class="task__list" id="task__list">
+       <div class="task__list" id="task__list">
            <!-- Tasks will be added here dynamically -->
-            <div class="task__item-container">
-                <li class="task__item">Comprar Leche</li>
-                <button class="delete-button" id="delete-button">
-                    <img 
-                        src="./delete.svg"
-                        alt="delete icon"
-                    >
-                </button>
-            </div>
-            <div class="task__item-container">
-                <li class="task__item">Comprar Leche</li>
-                <button class="delete-button" id="delete-button">
-                    <img 
-                        src="./delete.svg"
-                        alt="delete icon"
-                    >
-                </button>
-            </div>
-       </ul>
+       </div>
     </div>
     
+    <script src="/index.js"></script>
 
 </body>
 </html>
